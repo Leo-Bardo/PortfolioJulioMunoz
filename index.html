@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+	<div class="contenedor-header">
+		<header>
+			<div class="logo">
+					<a href="#">Julio Muñoz</a>
+			</div>
+				<nav id="nav">
+					<ul id="menu" >
+						<li><a href="#inicio">INICIO</a> </li>
+						<li><a href="#sobremi">SOBRE MI</a> </li>
+						<li><a href="#skills">SKILLS</a> </li>
+						<li><a href="#curriculum">CURRICULUM</a> </li>
+						<li><a href="#portfolio">PORTFOLIO</a> </li>
+						<li><a href="#contacto">CONTACTO</a> </li>
+					</ul>
+				</nav>
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById("menu");
+    menu.style.display === "none" ? menu.style.display = "block" : menu.style.display = "none";
+  }
+
+  window.addEventListener("click", function(event) {
+    var menu = document.getElementById("menu");
+    var navResponsive = document.querySelector(".nav-responsive");
+    var target = event.target;
+    if (target !== navResponsive && target.parentNode !== navResponsive) {
+      menu.style.display = "none";
+    }
+  });
+</script>
+				<div class="nav-responsive">
+					<i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+				</div> 
+		</header>
+	</div>
+
+	<section id="inicio" class="inicio">
+		<div class="contenido-banner">
+			<div class="contenedor-img"><!-- Para modificar -->
+				<img src="img/julio.png" alt="">
+				<h1>Julio Muñoz</h1>
+				 <h2>Ingeniero en Sistemas Computacionales</h2>
+				 <div class="redes">
+				 	<a href="https://www.facebook.com/IngJulioMu/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+				 	<a href="https://twitter.com/IngJulioM" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+				 	<a href="https://join.skype.com/invite/e1SB7rj7uvfa" target="_blank"><i class="fa-brands fa-skype"></i></a>
+				 	<a href="https://www.linkedin.com/in/ingjuliom/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+				 	<a href="https://github.com/Leo-Bardo" target="_blank"><i class="fa-brands fa-github"></i></a>
+				 </div>
+			</div>
+		</div>
+	</section>
+
+	<!-- SECCION SOBRE MI -->
+	<section id="sobremi" class="sobremi">
+		<div class="contenido-seccion">
+			<h2>Sobre Mí</h2>
+			<p><span>Hola, soy Julio Muñoz </span>Soy Julio, un apasionado desarrollador de software con experiencia en múltiples lenguajes de programación, incluyendo PHP, JavaScript y Python. Me encanta enfrentar desafíos y encontrar soluciones creativas e innovadoras a los problemas que se presentan.
+
+			Mi carrera comenzó en la universidad, donde estudié ingeniería de sistemas y me enamoré de la programación. Desde entonces, he trabajado en una variedad de proyectos emocionantes, desde pequeñas aplicaciones web hasta sistemas empresariales a gran escala.
+
+			Me apasiona trabajar en equipo y colaborar con otros profesionales en el campo de la tecnología. Me siento cómodo trabajando en ambientes ágiles y siento que mi experiencia me permite aportar ideas útiles y valiosas para el equipo.
+
+			Siempre estoy en la búsqueda de nuevos desafíos, y estoy emocionado por el potencial de seguir creciendo y aprendiendo en el campo de la tecnología. Si tienes un proyecto emocionante y estás buscando un desarrollador motivado y experimentado, ¡no dudes en contactarme!
+</p>
+			<div class="fila">
+				<!-- datos personales -->
+				<div class="col">
+					<h3>Datos Personales</h3>
+					<ul>
+						<li>
+							<strong>Cumpleaños</strong>
+							16-02-1989
+						</li>
+						<li>
+							<strong>Teléfono</strong>
+							4681396603
+						</li>
+						<li>
+							<strong>Email</strong>
+							ing.munozg@hotmail.com
+						</li>
+						<li>
+							<strong>Website</strong>
+							Morelos #535
+						</li>
+						<li>
+							<strong>Cargo</strong>
+							<span>Freelance</span>
+							</li>
+					</ul>
+				</div>
+
+					<!-- intereses NOTA: CAMBIAR LOS ICONOS E INTERESES-->
+					<div class="col">
+						<h3>Intereses</h3>
+						<div class="contenedor-intereses">
+							<div class="interes"><!-- ** Revisar esta parte del codigo ** -->
+								<i class="fa-solid fa-gamepad"></i>
+								<span align="center">VIDEO JUEGOS</span>
+							</div>
+							<div class="interes">
+								<i class="fa-solid fa-headphones"></i>
+								<span>MUSICA</span>
+							</div>
+							<div class="interes">
+								<i class="fa-solid fa-plane"></i>
+								<span>VIAJAR</span>
+							</div>
+							<div class="interes">
+								<i class="fa-solid fa-person-hiking"></i>
+								<span>DEPORTES</span>
+							</div>
+							<div class="interes">
+								<i class="fa-solid fa-book"></i>
+								<span>LECTURAS</span>
+							</div>
+							<div class="interes">
+								<i class="fa-solid fa-camera"></i>
+								<span>FOTOGRAFIA</span>
+							</div>
+							<div class="interes">
+								<i class="fa-solid fa-chess-king"></i>
+								<span>AJEDREZ</span>
+							</div>	
+						</div>
+					</div>
+			</div>
+<div class="sobremi">
+	<button>				
+		<a href="doctos/curriculum.pdf" target="_blank" class="download-link">
+		  Descargar CV <i class="fa-solid fa-download"></i>
+		</a>
+		<span class="overlay"></span>
+	</button>
+</div>
+		</div>
+	</section>
+
+	<!-- SECTION SKILLS -->
+	<section class="skills" id="skills">
+		<div class="contenido-seccion">
+			<h2>Skills</h2>
+			<div class="fila">
+			<!-- Technical Skills -->
+			<div class="col">
+				<h3>Technical Skills</h3>
+				<div class="skill">
+					<span>JavaScript</span>
+					<div class="barra-skill">
+						<div class="progreso javascript">
+							<span>75%</span>
+						</div>
+					</div>
+				</div>
+				<div class="skill">
+					<span>HTML & CSS</span>
+					<div class="barra-skill">
+						<div class="progreso htmlcss">
+							<span>89%</span>
+						</div>
+					</div>
+				</div>
+				<div class="skill">
+					<span>PhotoShop</span>
+					<div class="barra-skill">
+						<div class="progreso photoshop">
+							<span>95%</span>
+						</div>
+					</div>
+				</div>
+				<div class="skill">
+					<span>WordPress</span>
+					<div class="barra-skill">
+						<div class="progreso wordpress">
+							<span>91%</span>
+						</div>
+					</div>
+				</div>
+				<div class="skill">
+					<span>MySQL</span>
+					<div class="barra-skill">
+						<div class="progreso mysql">
+							<span>55%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Professional Skills -->
+			<div class="col">
+				<h3>Professional Skills</h3>
+				<div class="skill">
+					<span>Comunicación</span>
+					<div class="barra-skill">
+						<div class="progreso comunicacion">
+							<span>80%</span>
+						</div>
+					</div>
+				</div>
+				<div class="skill">
+					<span>Trabajo en Equipo</span>
+					<div class="barra-skill">
+						<div class="progreso trabajo">
+							<span>70%</span>
+						</div>
+					</div>
+				</div>
+				<div class="skill">
+					<span>Creatividad</span>
+					<div class="barra-skill">
+						<div class="progreso creatividad">
+							<span>99%</span>
+						</div>
+					</div>
+				</div>
+				<div class="skill">
+					<span>Dedicación</span>
+					<div class="barra-skill">
+						<div class="progreso dedicacion">
+							<span>65%</span>
+						</div>
+					</div>
+				</div>
+				<div class="skill">
+					<span>Proyect Management</span>
+					<div class="barra-skill">
+						<div class="progreso proyect">
+							<span>94%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>			
+	</section>
+	<!-- SECTION CURRICULUM -->
+	<section id="curriculum" class="curriculum">
+	<div class="contenido-seccion">
+		<h2>Curriculum</h2>
+		<div class="fila">
+			<div class="col izquierda">
+				<h3>Educación</h3>
+				<div class="item izq">
+					<h4>Arte y Multimedia</h4>
+					<span class="casa">Universidad de Oxford</span>
+					<span class="fecha">2005 - 2008</span>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis id corrupti dolores expedita quas unde et optio, vel dicta adipisci vero a reprehenderit? Quod culpa assumenda ullam, cupiditate maiores quam.</p>
+					<div class="conectori">
+						<div class="circuloi"> </div>
+					</div>
+				</div>
+				<div class="item izq">
+					<h4>Arte y Multimedia</h4>
+					<span class="casa">Universidad de Oxford</span>
+					<span class="fecha">2005 - 2008</span>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis id corrupti dolores expedita quas unde et optio, vel dicta adipisci vero a reprehenderit? Quod culpa assumenda ullam, cupiditate maiores quam.</p>
+					<div class="conectori">
+						<div class="circuloi"> </div>
+					</div>
+				</div>
+				<div class="item izq">
+					<h4>Arte y Multimedia</h4>
+					<span class="casa">Universidad de Oxford</span>
+					<span class="fecha">2005 - 2008</span>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis id corrupti dolores expedita quas unde et optio, vel dicta adipisci vero a reprehenderit? Quod culpa assumenda ullam, cupiditate maiores quam.</p>
+					<div class="conectori">
+						<div class="circuloi"> </div>
+					</div>
+				</div>
+			</div>
+				<div class="col derecha">
+					<h3>Experiencia de Empleos</h3>
+					<div class="item der">
+						<h4>Front Developer</h4>
+						<span class="casa">Nombre de Compañía</span>
+						<span class="fecha">2005 - 2008</span>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis id corrupti dolores expedita quas unde et optio, vel dicta adipisci vero a reprehenderit? Quod culpa assumenda ullam, cupiditate maiores quam.</p>
+						<div class="conectord">
+							<div class="circulod"> </div>
+						</div>
+					</div>
+					<div class="item der">
+						<h4>Front Developer</h4>
+						<span class="casa">Nombre de Compañía</span>
+						<span class="fecha">2005 - 2008</span>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis id corrupti dolores expedita quas unde et optio, vel dicta adipisci vero a reprehenderit? Quod culpa assumenda ullam, cupiditate maiores quam.</p>
+						<div class="conectord">
+							<div class="circulod"> </div>
+						</div>
+					</div>				
+					<div class="item der">
+						<h4>Front Developer</h4>
+						<span class="casa">Nombre de Compañía</span>
+						<span class="fecha">2005 - 2008</span>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis id corrupti dolores expedita quas unde et optio, vel dicta adipisci vero a reprehenderit? Quod culpa assumenda ullam, cupiditate maiores quam.</p>
+						<div class="conectord">
+							<div class="circulod"> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+	<!-- SECCION PORTFOLIO -->
+	<section id="portfolio" class="portfolio">
+		<div class="contenido-seccion">
+			<h2>PORTFOLIO</h2>
+			<div class="galeria">
+				<div class="proyecto">
+					<img src="img/p1.jpg" alt="">
+					<div class="overlay">
+						<h3>Diseño Creativo</h3>
+						<p>Fotografía</p>
+					</div>
+				</div>
+				<div class="proyecto">
+					<img src="img/p2.jpg" alt="">
+					<div class="overlay">
+						<h3>Diseño Creativo</h3>
+						<p>Fotografía</p>
+					</div>
+				</div>
+				<div class="proyecto">
+					<img src="img/p3.jpg" alt="">
+					<div class="overlay">
+						<h3>Diseño Creativo</h3>
+						<p>Fotografía</p>
+					</div>
+				</div>		
+				<div class="proyecto">
+					<img src="img/p4.jpg" alt="">
+					<div class="overlay">
+						<h3>Diseño Creativo</h3>
+						<p>Fotografía</p>
+					</div>
+				</div>			
+				<div class="proyecto">
+					<img src="img/p5.jpg" alt="">
+					<div class="overlay">
+						<h3>Diseño Creativo</h3>
+						<p>Fotografía</p>
+					</div>
+				</div>
+				<div class="proyecto">
+					<img src="img/p6.jpg" alt="">
+					<div class="overlay">
+						<h3>Diseño Creativo</h3>
+						<p>Fotografía</p>
+					</div>
+				</div>															
+			</div>
+		</div>
+	</section>
+	<!-- SECCION CONTACTO -->
+	<section id="contacto" class="contacto">
+		<div class="contenido-seccion">
+			<h2>CONTACTO</h2>
+			<div class="fila">
+				<div class="col">
+					<label for="numTel">Número Telefonico</label>
+					<input type="text" placeholder="Numero Telefonico">
+					<label for="dirCorreo">Dirección de Correo</label>
+					<input type="text" placeholder="Direccion de Correo">
+					<label for="asunto">Asunto</label>
+					<input type="text" placeholder="Asunto">
+					<label for="mensaje">Mensaje</label>
+					<textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+					<button>
+						Enviar Mensaje<i class="fa-sharp fa-solid fa-paper-plane"></i>
+						<span class="overlay"></span>
+					</button>
+				</div>
+				<!-- Mapa -->
+				<div class="col">
+					<img src="img/ubicacion.png" alt="">
+					<div class="info">
+						<ul>
+							<li>
+								<i class="fa-solid fa-location-dot"></i>
+								Morelos 535, Col La Purisima, San Luis de la Paz, Gto.
+							</li>
+							<li>
+								<i class="fa-solid fa-mobile-screen"></i>
+								Llamanos: 468681396603
+							</li>
+							<li>
+								<i class="fa-solid fa-envelope"></i>
+								Email: ing.munozg@hotmail.com
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</body>
+</html>
