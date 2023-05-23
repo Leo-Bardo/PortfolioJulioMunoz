@@ -23,14 +23,19 @@ html{
 	max-width: 1100px;
 	margin: auto;
 	display: flex;
-	justify-content: ´space-between;
-	align-items: center;
+	justify-content: space-between;
+	align-self: item;s: center;
 	padding: 10px 20px;
 }
-@media screen and (max-width: 600px) {
-	.contenedor-header header nav{
+@media screen and (max-width: 800px) {
+	.contenedor-header header ul{
 		display: none;
-		display: flex;
+		padding-left: 20px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.contenedor-header header ul{
+		display: none;
 	}
 }
 .contenedor-header header .logo a{
@@ -61,7 +66,7 @@ html{
 	padding: 5px 10px;
 	border-radius: 5px;
 	cursor: pointer;
-	/*display: none;*/
+	display: flex;
 }
 /* SECCION I N I C I O */
 .inicio{

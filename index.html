@@ -26,19 +26,24 @@
 					</ul>
 				</nav>
 <script>
-  function toggleMenu() {
-    var menu = document.getElementById("menu");
-    menu.style.display === "none" ? menu.style.display = "block" : menu.style.display = "none";
+function toggleMenu() {
+  var menu = document.getElementById("menu");
+  if (menu.style.display === "none" || menu.style.display === "") {
+    menu.style.display = "block";
+  } else {
+    menu.style.display = "none";
   }
+}
 
-  window.addEventListener("click", function(event) {
-    var menu = document.getElementById("menu");
-    var navResponsive = document.querySelector(".nav-responsive");
-    var target = event.target;
-    if (target !== navResponsive && target.parentNode !== navResponsive) {
-      menu.style.display = "none";
-    }
-  });
+window.addEventListener("click", function(event) {
+  var menu = document.getElementById("menu");
+  var navResponsive = document.querySelector(".nav-responsive");
+  var target = event.target;
+  if (target !== navResponsive && target.parentNode !== navResponsive) {
+    menu.style.display = "none";
+  }
+});
+
 </script>
 				<div class="nav-responsive">
 					<i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
@@ -48,7 +53,7 @@
 
 	<section id="inicio" class="inicio">
 		<div class="contenido-banner">
-			<div class="contenedor-img"><!-- Para modificar -->
+			<div class="contenedor-img" style="max-width: 100%;height: auto;"><!-- Para modificar -->
 				<img src="img/julio.png" alt="">
 				<h1>Julio Muñoz</h1>
 				 <h2>Ingeniero en Sistemas Computacionales</h2>
@@ -67,13 +72,13 @@
 	<section id="sobremi" class="sobremi">
 		<div class="contenido-seccion">
 			<h2>Sobre Mí</h2>
-			<p><span>Hola, soy Julio Muñoz </span>Soy Julio, un apasionado desarrollador de software con experiencia en múltiples lenguajes de programación, incluyendo PHP, JavaScript y Python. Me encanta enfrentar desafíos y encontrar soluciones creativas e innovadoras a los problemas que se presentan.
+			<p><span>Hola, soy Julio Muñoz, </span> un apasionado desarrollador de software con experiencia en múltiples lenguajes de programación, incluyendo PHP, JavaScript y Python. Me encanta enfrentar desafíos y encontrar soluciones creativas e innovadoras a los problemas que se presentan.
 
-			Mi carrera comenzó en la universidad, donde estudié ingeniería de sistemas y me enamoré de la programación. Desde entonces, he trabajado en una variedad de proyectos emocionantes, desde pequeñas aplicaciones web hasta sistemas empresariales a gran escala.
+			<p>Mi carrera comenzó en la universidad, donde estudié ingeniería de sistemas y me enamoré de la programación. Desde entonces, he trabajado en una variedad de proyectos emocionantes, desde pequeñas aplicaciones web hasta sistemas empresariales a gran escala.
 
-			Me apasiona trabajar en equipo y colaborar con otros profesionales en el campo de la tecnología. Me siento cómodo trabajando en ambientes ágiles y siento que mi experiencia me permite aportar ideas útiles y valiosas para el equipo.
+			<p>Me apasiona trabajar en equipo y colaborar con otros profesionales en el campo de la tecnología. Me siento cómodo trabajando en ambientes ágiles y siento que mi experiencia me permite aportar ideas útiles y valiosas para el equipo.
 
-			Siempre estoy en la búsqueda de nuevos desafíos, y estoy emocionado por el potencial de seguir creciendo y aprendiendo en el campo de la tecnología. Si tienes un proyecto emocionante y estás buscando un desarrollador motivado y experimentado, ¡no dudes en contactarme!
+			<p>Siempre estoy en la búsqueda de nuevos desafíos, y estoy emocionado por el potencial de seguir creciendo y aprendiendo en el campo de la tecnología. Si tienes un proyecto emocionante y estás buscando un desarrollador motivado y experimentado, ¡no dudes en contactarme!
 </p>
 			<div class="fila">
 				<!-- datos personales -->
