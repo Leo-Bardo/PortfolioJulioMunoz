@@ -16,7 +16,7 @@
 					<a href="#">Julio Muñoz</a>
 			</div>
 				<nav id="nav">
-					<ul id="menu" >
+					<ul id="menu">
 						<li><a href="#inicio">INICIO</a> </li>
 						<li><a href="#sobremi">SOBRE MI</a> </li>
 						<li><a href="#skills">SKILLS</a> </li>
@@ -28,25 +28,23 @@
 <script>
 function toggleMenu() {
   var menu = document.getElementById("menu");
-  if (menu.style.display === "none" || menu.style.display === "") {
-    menu.style.display = "block";
-  } else {
-    menu.style.display = "none";
-  }
+  menu.style.display = menu.style.display === "none" ? "block" : "none";
 }
 
-window.addEventListener("click", function(event) {
+window.addEventListener("resize", function() {
   var menu = document.getElementById("menu");
   var navResponsive = document.querySelector(".nav-responsive");
-  var target = event.target;
-  if (target !== navResponsive && target.parentNode !== navResponsive) {
+  if (window.innerWidth > 600) {
+    menu.style.display = "block";
+    navResponsive.style.display = "none";
+  } else {
     menu.style.display = "none";
+    navResponsive.style.display = "flex";
   }
 });
-
 </script>
-				<div class="nav-responsive">
-					<i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+				<div class="nav-responsive" onclick="toggleMenu">
+					<i class="fa-solid fa-bars"></i>
 				</div> 
 		</header>
 	</div>
