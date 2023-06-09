@@ -10,17 +10,6 @@ html{
 	scroll-behavior: smooth;
 }
 /*MENU*/
-
-  #menu li {
-    text-align: center;
-  }
-  #menu li a {
-    color: #fff;
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-  }
-
 .contenedor-header{
 	background: #1e2326;
 	position: fixed;
@@ -34,27 +23,15 @@ html{
 	max-width: 1100px;
 	margin: auto;
 	display: flex;
-	align-self: item;s: center;
+	justify-content: ´space-between;
+	align-items: center;
 	padding: 10px 20px;
 }
-@media screen and (max-width: 800px) {
-	.contenedor-header header ul{
-	display: none;
-	padding-left: 20px;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #1e2326;
-    padding: 10px 0;
-    flex-direction: row;
+@media screen and (max-width: 600px) {
+	.contenedor-header header nav{
+		display: none;
+		display: flex;
 	}
-}
-
-@media screen and (max-width: 800px) {
-.contenedor-header nav{
-	display: none;
-}
 }
 .contenedor-header header .logo a{
 	font-family: 'Righteous';
@@ -84,18 +61,7 @@ html{
 	padding: 5px 10px;
 	border-radius: 5px;
 	cursor: pointer;
-	display: none;
-}
-@media screen and (max-width: 800px) {
-.nav-responsive{
-	display: flex;
-	padding: 5px 10px;
-}
-}
-.nav-responsive i{
-	color: #fff;
-	font-size: 24px;
-	line-height: 1;
+	/*display: none;*/
 }
 /* SECCION I N I C I O */
 .inicio{
