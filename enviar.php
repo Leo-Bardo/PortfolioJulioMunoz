@@ -1,6 +1,10 @@
 <?php
 if ($_SERVER['REQUEST_METHOD']=="POST") {
 
+		ini_set("SMTP", "smtp.gmail.com");
+    	ini_set("smtp_port", "587");
+    	ini_set("sendmail_from", "julioalb4488@gmail.com");
+
 		$telefono = $_POST['telefono'];
 		$correo = $_POST['correo'];
 		$mensaje = $_POST['mensaje'];
