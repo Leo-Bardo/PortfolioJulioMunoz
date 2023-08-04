@@ -25,23 +25,9 @@
 						<li><a href="#contacto">CONTACTO</a> </li>
 					</ul>
 				</nav>
-<script>
-  function toggleMenu() {
-    var menu = document.getElementById("menu");
-    menu.style.display === "none" ? menu.style.display = "block" : menu.style.display = "none";
-  }
 
-  window.addEventListener("click", function(event) {
-    var menu = document.getElementById("menu");
-    var navResponsive = document.querySelector(".nav-responsive");
-    var target = event.target;
-    if (target !== navResponsive && target.parentNode !== navResponsive) {
-      menu.style.display = "none";
-    }
-  });
-</script>
 				<div class="nav-responsive">
-					<i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+					<i class="fa-solid fa-bars"></i>
 				</div> 
 		</header>
 	</div>
@@ -156,28 +142,76 @@
 			<div class="fila">
 			<!-- Technical Skills -->
 			<div class="col">
-				<h3>Technical Skills</h3>
+				<h3>Hard Skills</h3>
+				<div class="skill">
+					<span>PHP</span>
+					<div class="barra-skill">
+						<div class="progreso php">
+							<span>85%</span>
+						</div>
+					</div>
+				</div>
 				<div class="skill">
 					<span>JavaScript</span>
 					<div class="barra-skill">
 						<div class="progreso javascript">
+							<span>70%</span>
+						</div>
+					</div>
+				</div>
+				<div class="skill">
+					<span>HTML5 & CSS3</span>
+					<div class="barra-skill">
+						<div class="progreso htmlcss">
+							<span>90%</span>
+						</div>
+					</div>
+				</div>
+				<div class="skill">
+					<span>MySql</span>
+					<div class="barra-skill">
+						<div class="progreso mysql">
+							<span>90%</span>
+						</div>
+					</div>
+				</div>
+				<div class="skill">
+					<span>Laravel</span>
+					<div class="barra-skill">
+						<div class="progreso laravel">
 							<span>75%</span>
 						</div>
 					</div>
 				</div>
 				<div class="skill">
-					<span>HTML & CSS</span>
+					<span>Yii2</span>
 					<div class="barra-skill">
-						<div class="progreso htmlcss">
-							<span>89%</span>
+						<div class="progreso yii2">
+							<span>70%</span>
 						</div>
 					</div>
 				</div>
 				<div class="skill">
-					<span>PhotoShop</span>
+					<span>Node.js</span>
 					<div class="barra-skill">
-						<div class="progreso photoshop">
-							<span>95%</span>
+						<div class="progreso node">
+							<span>40%</span>
+						</div>
+					</div>
+				</div>
+				<div class="skill">
+					<span>React</span>
+					<div class="barra-skill">
+						<div class="progreso react">
+							<span>40%</span>
+						</div>
+					</div>
+				</div>
+				<div class="skill">
+					<span>GitHub</span>
+					<div class="barra-skill">
+						<div class="progreso github">
+							<span>80%</span>
 						</div>
 					</div>
 				</div>
@@ -185,27 +219,19 @@
 					<span>WordPress</span>
 					<div class="barra-skill">
 						<div class="progreso wordpress">
-							<span>91%</span>
-						</div>
-					</div>
-				</div>
-				<div class="skill">
-					<span>MySQL</span>
-					<div class="barra-skill">
-						<div class="progreso mysql">
-							<span>55%</span>
+							<span>80%</span>
 						</div>
 					</div>
 				</div>
 			</div>
 			<!-- Professional Skills -->
 			<div class="col">
-				<h3>Professional Skills</h3>
+				<h3>Soft Skills</h3>
 				<div class="skill">
 					<span>Comunicación</span>
 					<div class="barra-skill">
 						<div class="progreso comunicacion">
-							<span>80%</span>
+							<span>70%</span>
 						</div>
 					</div>
 				</div>
@@ -218,26 +244,66 @@
 					</div>
 				</div>
 				<div class="skill">
-					<span>Creatividad</span>
+					<span>Adaptabilidad</span>
 					<div class="barra-skill">
-						<div class="progreso creatividad">
-							<span>99%</span>
+						<div class="progreso adaptabilidad">
+							<span>90%</span>
 						</div>
 					</div>
 				</div>
 				<div class="skill">
-					<span>Dedicación</span>
+					<span>Resolución de Problemas</span>
 					<div class="barra-skill">
-						<div class="progreso dedicacion">
-							<span>65%</span>
+						<div class="progreso resolucion">
+							<span>90%</span>
 						</div>
 					</div>
 				</div>
 				<div class="skill">
-					<span>Proyect Management</span>
+					<span>Liderazgo</span>
 					<div class="barra-skill">
-						<div class="progreso proyect">
-							<span>94%</span>
+						<div class="progreso liderazgo">
+							<span>60%</span>
+						</div>
+					</div>
+				</div>
+				<div class="skill">
+					<span>Gestión de Tiempo</span>
+					<div class="barra-skill">
+						<div class="progreso gestion">
+							<span>90%</span>
+						</div>
+					</div>
+				</div>
+				<div class="skill">
+					<span>Pensamiento Critico</span>
+					<div class="barra-skill">
+						<div class="progreso pensamientocr">
+							<span>90%</span>
+						</div>
+					</div>
+				</div>
+				<div class="skill">
+					<span>Pensamiento Estrategico</span>
+					<div class="barra-skill">
+						<div class="progreso pensamientoes">
+							<span>60%</span>
+						</div>
+					</div>
+				</div>
+				<div class="skill">
+					<span>Negociación</span>
+					<div class="barra-skill">
+						<div class="progreso negociacion">
+							<span>80%</span>
+						</div>
+					</div>
+				</div>
+				<div class="skill">
+					<span>Iniciativa</span>
+					<div class="barra-skill">
+						<div class="progreso iniciativa">
+							<span>60%</span>
 						</div>
 					</div>
 				</div>
@@ -301,7 +367,7 @@
 						</div>
 					</div>				
 					<div class="item der">
-						<h4></h4>
+						<h4>Soporte Informatico/Programador</h4>
 						<span class="casa">Instituto Nacional de Geografía y Estadistica</span>
 						<span class="fecha">junio 2022 - enero 2023</span>
 						<p>En INEGI tuve la responsabilidad en la contratación y gestión de profesionales de tecnología de la información, mi conocimiento en desarrollo web desempeñó un papel fundamental en el cumplimiento de los objetivos del proyecto. Desarrollé y mantuve sistemas informáticos utilizando mis habilidades en desarrollo web, como HTML, PHP y MySQL, asegurando una experiencia de usuario fluida y una gestión eficiente de los datos recopilados. Además, brindé soporte técnico a mis compañeros de equipo, solucionando problemas relacionados con hardware y software. Trabajé en colaboración estrecha con otros departamentos, coordinando esfuerzos para una implementación coherente y eficiente del proyecto. También proporcioné capacitación y orientación a los profesionales de tecnología de la información, compartiendo mis conocimientos en desarrollo web y dotándolos de las herramientas necesarias para llevar a cabo sus responsabilidades de manera efectiva.</p>
@@ -320,45 +386,58 @@
 			<h2>PORTFOLIO</h2>
 			<div class="galeria">
 				<div class="proyecto">
-					<img src="img/p1.jpg" alt="">
+					<img src="img/p1.png" alt="">
 					<div class="overlay">
-						<h3>Diseño Creativo</h3>
-						<p>Fotografía</p>
+						<a href="https://codileng.com/" class="linkProjects" target="_blank">
+						<h3>Codileng</h3>
+						<p>Desarrollo Web</p>
+					</a>
 					</div>
+					</a>				
 				</div>
 				<div class="proyecto">
-					<img src="img/p2.jpg" alt="">
+					<img src="img/p2.png" alt="">
 					<div class="overlay">
-						<h3>Diseño Creativo</h3>
-						<p>Fotografía</p>
+						<a href="https://lerco.agency/" class="linkProjects" target="_blank">
+							<h3>Lerco</h3>
+							<p>Desarrollo Web</p>
+						</a>
 					</div>
-				</div>
+					</div>
 				<div class="proyecto">
-					<img src="img/p3.jpg" alt="">
+					<img src="img/p3.png" alt="">
 					<div class="overlay">
-						<h3>Diseño Creativo</h3>
-						<p>Fotografía</p>
+						<a href="https://www.xtrapak.com.mx/" class="linkProjects" target="_blank">
+							<h3>Diseño Creativo</h3>
+							<p>Fotografía</p>
+						</a>
 					</div>
 				</div>		
 				<div class="proyecto">
 					<img src="img/p4.jpg" alt="">
 					<div class="overlay">
-						<h3>Diseño Creativo</h3>
-						<p>Fotografía</p>
+						<a href="https://www.linkedin.com/in/ingjuliom/" class="linkProjects" target="_blank">
+							<h3>Diseño Creativo</h3>
+							<p>Fotografía</p>
+						</a>
 					</div>
 				</div>			
 				<div class="proyecto">
 					<img src="img/p5.jpg" alt="">
 					<div class="overlay">
-						<h3>Diseño Creativo</h3>
-						<p>Fotografía</p>
+						<a href="https://www.linkedin.com/in/ingjuliom/" class="linkProjects" target="_blank">
+							<h3>Codileng</h3>
+							<p>Desarrollo Web</p>
+						</a>
 					</div>
 				</div>
 				<div class="proyecto">
 					<img src="img/p6.jpg" alt="">
 					<div class="overlay">
-						<h3>Diseño Creativo</h3>
-						<p>Fotografía</p>
+						<a href="https://www.linkedin.com/in/ingjuliom/" class="linkProjects">
+							<h3>Diseño Creativo</h3>
+							<p>Fotografía</p>
+						</a>
 					</div>
 				</div>															
 			</div>
@@ -370,18 +449,20 @@
 			<h2>CONTACTO</h2>
 			<div class="fila">
 				<div class="col">
+					<form action="enviar.php" method="post">
 					<label for="numTel">Número Telefonico</label>
-					<input type="text" placeholder="Numero Telefonico">
+					<input type="text" placeholder="Numero Telefonico" id="telefono" name="telefono">
 					<label for="dirCorreo">Dirección de Correo</label>
-					<input type="text" placeholder="Direccion de Correo">
+					<input type="text" placeholder="Direccion de Correo" id="correo" name="correo">
 					<label for="asunto">Asunto</label>
-					<input type="text" placeholder="Asunto">
+					<input type="text" placeholder="Asunto" id="asunto" name="asunto">
 					<label for="mensaje">Mensaje</label>
-					<textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+					<textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
 					<button>
 						Enviar Mensaje<i class="fa-sharp fa-solid fa-paper-plane"></i>
 						<span class="overlay"></span>
 					</button>
+					</form>
 				</div>
 				<!-- Mapa -->
 				<div class="col">

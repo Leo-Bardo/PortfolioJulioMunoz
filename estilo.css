@@ -276,13 +276,21 @@ html{
 	font-size: 14px;
 }
 /* Estas clases se agregaran dinamicamente mediante Javascript */
+.skills .skill .php{
+	width: 0%;
+	animation: 2s php forwards;
+}
+@keyframes php{
+	0%{width: 0%;}
+	100%{width: 85%;}
+}
 .skills .skill .javascript{
 	width: 0%;
 	animation: 2s javascript forwards;
 }
 @keyframes javascript{
 	0%{width: 0%;}
-	100%{width: 75%;}
+	100%{width:70%;}
 }
 .skills .skill .htmlcss{
 	width: 0%;
@@ -290,23 +298,7 @@ html{
 }
 @keyframes htmlcss{
 	0%{width: 0%;}
-	100%{width: 89%;}
-}
-.skills .skill .photoshop{
-	width: 0%;
-	animation: 2s photoshop forwards;
-}
-@keyframes photoshop{
-	0%{width: 0%;}
-	100%{width: 95%;}
-}
-.skills .skill .wordpress{
-	width: 0%;
-	animation: 2s wordpress forwards;
-}
-@keyframes wordpress{
-	0%{width: 0%;}
-	100%{width: 91%;}
+	100%{width: 90%;}
 }
 .skills .skill .mysql{
 	width: 0%;
@@ -314,16 +306,64 @@ html{
 }
 @keyframes mysql{
 	0%{width: 0%;}
-	100%{width: 55%;}
+	100%{width: 90%;}
+}
+.skills .skill .laravel{
+	width: 0%;
+	animation: 2s laravel forwards;
+}
+@keyframes laravel{
+	0%{width: 0%;}
+	100%{width: 75%;}
 }
 
+.skills .skill .yii2{
+	width: 0%;
+	animation: 2s yii2 forwards;
+}
+@keyframes yii2{
+	0%{width: 0%;}
+	100%{width: 70%;}
+}
+.skills .skill .node{
+	width: 0%;
+	animation: 2s node forwards;
+}
+@keyframes node{
+	0%{width: 0%;}
+	100%{width: 40%;}
+}
+.skills .skill .react{
+	width: 0%;
+	animation: 2s react forwards;
+}
+@keyframes react{
+	0%{width: 0%;}
+	100%{width: 40%;}
+}
+.skills .skill .github{
+	width: 0%;
+	animation: 2s github forwards;
+}
+@keyframes github{
+	0%{width: 0%;}
+	100%{width: 80%;}
+}
+.skills .skill .wordpress{
+	width: 0%;
+	animation: 2s wordpress forwards;
+}
+@keyframes wordpress{
+	0%{width: 0%;}
+	100%{width: 80%;}
+}
 .skills .skill .comunicacion{
 	width: 0%;
 	animation: 2s comunicacion forwards;
 }
 @keyframes comunicacion{
 	0%{width: 0%;}
-	100%{width: 80%;}
+	100%{width: 70%;}
 }
 .skills .skill .trabajo{
 	width: 0%;
@@ -333,29 +373,69 @@ html{
 	0%{width: 0%;}
 	100%{width: 70%;}
 }
-.skills .skill .creatividad{
+.skills .skill .adaptabilidad{
 	width: 0%;
-	animation: 2s creatividad forwards;
+	animation: 2s adaptabilidad forwards;
 }
-@keyframes creatividad{
+@keyframes adaptabilidad{
 	0%{width: 0%;}
-	100%{width: 99%;}
+	100%{width: 90%;}
 }
-.skills .skill .dedicacion{
+.skills .skill .resolucion{
 	width: 0%;
-	animation: 2s dedicacion forwards;
+	animation: 2s resolucion forwards;
 }
-@keyframes dedicacion{
+@keyframes resolucion{
 	0%{width: 0%;}
-	100%{width: 65%;}
+	100%{width: 90%;}
 }
-.skills .skill .proyect{
+.skills .skill .liderazgo{
 	width: 0%;
-	animation: 2s proyect forwards;
+	animation: 2s liderazgo forwards;
 }
-@keyframes proyect{
+@keyframes liderazgo{
+	0%{width: 0%;}
+	100%{width: 60%;}
+}
+.skills .skill .gestion{
+	width: 0%;
+	animation: 2s gestion forwards;
+}
+@keyframes gestion{
+	0%{width: 0%;}
+	100%{width: 90%;}
+}
+.skills .skill .pensamientocr{
+	width: 0%;
+	animation: 2s pensamientocr forwards;
+}
+@keyframes pensamientocr{
+	0%{width: 0%;}
+	100%{width: 90%;}
+}
+.skills .skill .pensamientoes{
+	width: 0%;
+	animation: 2s pensamientoes forwards;
+}
+@keyframes pensamientoes{
 	0%{width: 0%;}
 	100%{width: 94%;}
+}
+.skills .skill .negociacion{
+	width: 0%;
+	animation: 2s negociacion forwards;
+}
+@keyframes negociacion{
+	0%{width: 0%;}
+	100%{width: 80%;}
+}
+.skills .skill .iniciativa{
+	width: 0%;
+	animation: 2s iniciativa forwards;
+}
+@keyframes iniciativa{
+	0%{width: 0%;}
+	100%{width: 60%;}
 }
 /* SECCION CURRICULUM */
 .curriculum {
@@ -368,6 +448,10 @@ html{
 	font-family: 'Righterous';
 	text-align: center;
 	padding: 20px 0;
+}
+.download-link{
+	color: white;
+	text-decoration: none;
 }
 .curriculum .fila{
 	display: flex;
@@ -515,6 +599,10 @@ html{
 .portfolio .galeria .proyecto .overlay:hover h3{
 	margin-bottom: 0px;
 }
+.linkProjects{
+	color: white;
+	text-decoration: none;
+}
 .contacto{
 	/*background-image: url(img/contact_bg.png);*/
 	background-color: #1e2326;
@@ -580,21 +668,21 @@ html{
 }
 .contacto .col .info{
 	position: absolute;
-	top: 40%;
+	top: 63%;
 	background-color: #252A2E;
 	padding: 20px;
 	width: fit-content;
-	left: 50%;
+	left: 34.5%;
 	transform: translate(-50%, -50%);
 }
 .contacto .col .info ul{
 	list-style: none;
 }
 .contacto .col .info ul li{
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 }
 .contacto .col .info ul li i{
 	color: #1CB698;
 	display: inline-block;
-	margin-right: 20px;
+	margin-right: 5px;
 }
