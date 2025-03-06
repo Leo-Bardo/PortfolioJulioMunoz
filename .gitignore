@@ -1,0 +1,29 @@
+# Ignorar dependencias de Node.js
+node_modules/
+
+# Ignorar archivos de compilación de Webpack (si usas Webpack)
+dist/
+
+# Ignorar archivos de configuración de entornos de desarrollo
+.env
+
+# Ignorar archivos generados por IDEs (como VSCode)
+.vscode/
+
+# Ignorar archivos de logs
+*.log
+
+# Ignorar dependencias instaladas por npm (en caso de que uses yarn también)
+yarn.lock
+
+# Ignorar el sistema operativo de archivos
+.DS_Store  # Para macOS
+Thumbs.db  # Para Windows
+
+# Ignorar archivos de la carpeta public (si no los quieres subir)
+public/*.html
+public/*.json
+
+# Archivos de test o archivos temporales
+test/
+*.tmp
