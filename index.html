@@ -4,9 +4,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 	<title>Portfolio</title>
-	<link rel="stylesheet" href="estilo.css">
 </head>
 <body>
 <style type="">@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
@@ -612,7 +611,6 @@ html{
 
 
 
-	<!-- comienza react con dom y babel... webpack -->
 
 	<div class="contenedor-header">
 
@@ -652,7 +650,13 @@ html{
 	</div>
 	<section id="inicio" class="inicio">
 		<div class="contenido-banner">
-										  <div id="root"></div>
+
+
+
+				<!-- comienza react con dom y babel... webpack -->
+					<div id="root"></div>
+
+				<!-- ********************************************************** -->
 
 			<div class="contenedor-img"><!-- Para modificar -->
 				<img src="public/img/julio.png" alt="">
@@ -1014,7 +1018,7 @@ html{
 			</div>
 		</div>
 	</section>
-  <script src="https://cdn.jsdelivr.net/npm/bundle-js@1.0.3/bundler.min.js"></script> <!-- Ruta al archivo generado por Webpack -->
+  <script src="dist/bundle.js"></script> <!-- Ruta al archivo generado por Webpack -->
 
 </body>
 </html>

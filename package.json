@@ -1,13 +1,16 @@
 {
-  "name": "portfoliojuliomunoz",
+  "name": "munozport",
   "version": "1.0.0",
   "description": "Mi nombre es Julio Muñoz, soy Ingeniero en Sistemas computacionales, especialista en desarrollo web y apliaciones fullstack, mis principales hardskills son PHP, JavaScript, HTML, CSS, MySql",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "start": "webpack serve --mode development",
+  "build": "webpack --mode production",
+  "dev": "webpack serve --mode development",
+  "test": "echo Error: no test specified"
   },
   "keywords": [],
-  "author": "",
+  "author": "Julio Munoz",
   "license": "ISC",
   "dependencies": {
     "react": "^19.0.0",
@@ -23,5 +26,13 @@
     "webpack": "^5.98.0",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leo-Bardo/PortfolioJulioMunoz.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Leo-Bardo/PortfolioJulioMunoz/issues"
+  },
+  "homepage": "https://github.com/Leo-Bardo/PortfolioJulioMunoz#readme"
 }

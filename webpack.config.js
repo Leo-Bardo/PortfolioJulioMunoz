@@ -27,7 +27,11 @@ module.exports = {
     }),
   ],
   devServer: {
-    static: path.join(__dirname, 'dist'),
-    port: 3000,
+    static: {
+      directory: path.join(__dirname, 'dist'), // Servir archivos desde 'dist'
+    },
+    port: 3000,  // O cualquier puerto que prefieras
+    open: true,  // Abrir automáticamente el navegador
+    hot: true,   // Activar la recarga en caliente
   },
 };
