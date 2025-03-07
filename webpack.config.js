@@ -7,9 +7,6 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
   },
-  node: {
-    fs: 'empty'  // Evita que Webpack empaquete el módulo 'fs' en el frontend
-  },
   module: {
     rules: [
       {

@@ -1,0 +1,32 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main  # Se ejecuta en cada push al branch 'main'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '14'  # La versión de Node.js que deseas usar
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build with Webpack
+      run: npm run build  # Asegúrate de que tienes el script 'build' en tu package.json
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        deploy_branch: gh-pages  # Rama de despliegue
+        folder: ./dist  # El directorio donde se encuentran los archivos a desplegar
+        token: ${{ secrets.GITHUB_TOKEN }}  # Usar el token de GitHub Actions
